@@ -1,13 +1,10 @@
 import { ActivityIndicator } from "react-native";
 
-import { s } from "./styles";
+import { sLoading } from "./styles";
 import { colors } from "@/styles/theme";
 
 export function Loading() {
   return (
-    <ActivityIndicator
-      style={s.container}
-      color={colors.green.base}
-    />
+    <ActivityIndicator style={sLoading.container} color={colors.green.base} />
   );
 }
